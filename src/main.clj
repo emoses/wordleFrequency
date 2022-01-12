@@ -28,7 +28,6 @@
     (print "\n")))
 
 (defn -main [& args]
-  (print "hi\n")
   (with-open [rdr (clojure.java.io/reader (first args))]
     (-> (line-seq rdr)
         (do-count)
